@@ -27,8 +27,8 @@ jobs:
         run: |
           cd  SkillSharp
           git checkout -b pikachu_update
-          git submodule update --remote backend/Pikachu
-          git add backend/Pikachu
+          git submodule update --remote frontend/Pikachu
+          git add frontend/Pikachu
           git commit -m "Update module to latest commit"
           git push https://${{ secrets.PERSONAL_ACCESS_TOKEN }}@github.com/ChisTrun/SkillSharp.git pikachu_update
 
